@@ -1,0 +1,39 @@
+.design-process_container:nth-child(4n) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "desc desc desc . img";
+  margin: 0 1em;
+
+  .design-process_description {
+    grid-area: desc;
+
+    .description-body {
+      margin-left: 1em;
+    }
+  }
+  
+  .design-process_image-container {
+    grid-area: img;
+  }
+}
+
+.design-process_container:nth-child(4n+2) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "img . desc desc desc";
+  margin: 0 1em;
+
+  .design-process_description {
+    grid-area: desc;
+  }
+  
+  .design-process_image-container {
+    grid-area: img;
+  }
+}

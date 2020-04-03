@@ -1,0 +1,37 @@
+#app {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 15px 30px;
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: $title-header-font-size;
+    font-weight: $heavy-font-weight;
+    color: $base-black;
+    letter-spacing: 0.1em;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: $section-header-font-size;
+    font-weight: $heavy-font-weight;
+    color: $base-black;
+    letter-spacing: 0.125em;
+  }
+
+  h3 {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: $sub-header-font-size;
+    font-weight: $bold-font-weight;
+    color: $base-blue;
+  }
+
+  p {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: $body-font-size;
+    font-weight: $thin-font-weight;
+    color: $base-black;
+  }
+
+}

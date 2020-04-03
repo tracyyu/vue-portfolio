@@ -1,0 +1,65 @@
+.about-me_container {
+  margin: 2em 2em;
+}
+
+.about-me-dsecription_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "desc desc desc . img";
+
+  .about-me_description {
+    grid-area: desc;
+
+    .description-body {
+      margin-left: 1em;
+    }
+  }
+  
+  .about-me_image-container {
+    grid-area: img;
+  }
+}
+
+.skills-infograph-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "frd . info . bcd"
+    "des . info . tol";
+  margin: 0 1em;
+}
+
+.frontend {
+  grid-area: frd;
+}
+
+.design {
+  grid-area: des;
+}
+
+.backend {
+  grid-area: bcd;
+}
+
+.tools {
+  grid-area: tol;
+}
+
+.about-me_image {
+  grid-area: info;
+}
+
+.skills_description-container {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  ul {
+    li:not(:last-child) {
+      margin-bottom: 5px;
+  }
+  }
+}

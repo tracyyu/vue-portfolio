@@ -1,0 +1,38 @@
+.nav-wrapper {
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  margin-top: 15px;
+
+  #nav-menu {
+    width: 33%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 30px;
+  
+    .nav-menu-item {
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      font-size: $nav-font-size;
+      font-weight: $bold-font-weight;
+      color: $base-blue;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+  
+      a {
+        text-decoration: none;
+      }
+  
+      a:visited {
+        color: $base-blue;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
