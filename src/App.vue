@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar @goto="goto" />
     <b-container>
       <router-view/>
     </b-container>
@@ -18,6 +18,26 @@ export default {
   data: () => ({
     //
   }),
+    methods: {
+    goto(refName) {
+      console.log(refName);
+      // var element = this.$els[refName];
+      var top = 0;
+      if (refName === 'home') {
+        top = 0;
+      } else if (refName === 'about') {
+        top = 200;
+      } else if (refName === 'portfolio') {
+        top = 1250;
+      } else if (refName === 'design') {
+        top = 2250;
+      } else if (refName === 'contact') {
+        top = 3500;
+      }
+      
+      window.scrollTo(0, top);
+    }
+  }
 };
 </script>
 

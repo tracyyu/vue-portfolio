@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router';
+import ScrollAnimation from './directives/scollAnimation';
 import './assets/sass/index.scss';
+
+Vue.directive('scrollanimation', ScrollAnimation);
 
 Vue.config.productionTip = false
 

@@ -2,27 +2,32 @@
   <nav>
     <div class="nav-wrapper">
       <ul id="nav-menu" class="right hide-on-med-and-down">
-        <li class="nav-menu-item">
-          <router-link to="/">Home</router-link>
+        <li class="nav-menu_item">
+          <span v-on:click="goto('home')">Home</span>
           </li>
-        <li class="nav-menu-item">
-          <router-link to="/about">About</router-link>
+        <li class="nav-menu_item">
+          <span v-on:click="goto('about')">About</span>
         </li>
-        <li class="nav-menu-item">
-          <router-link to="/portfolio">Portfolio</router-link>
+        <li class="nav-menu_item">
+          <span v-on:click="goto('portfolio')">Portfolio</span>
         </li>
-        <li class="nav-menu-item">
-          <router-link to="/design">Design</router-link>
+        <li class="nav-menu_item">
+          <span v-on:click="goto('design')">Design</span>
         </li>
-        <li class="nav-menu-item">
-          <router-link to="/contact">Contact</router-link>
+        <li class="nav-menu_item">
+          <span v-on:click="goto('contact')">Contact</span>
         </li>
       </ul>
     </div>
   </nav>
 </template>
 
-<style lang="sass">
-
-</style>
-
+<script>
+export default {
+  methods: {
+    goto(value) {
+      this.$emit('goto', value);
+    }
+  }
+}
+</script>

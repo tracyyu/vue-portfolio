@@ -1,0 +1,59 @@
+.skills-infograph_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "frd . me . bcd"
+    "dsn . me . tool";
+  align-items: center;
+  justify-items: center;
+  margin: 0 1em;
+  grid-row-gap: 1em;
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: $sub-sub-header-font-size;
+    font-weight: 700;
+    color: $base-white;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .circle:hover {
+    width: 200px;
+    height: 200px;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .frontend_wrapper {
+    background-color: $base-teal;
+    grid-area: frd;
+  }
+  
+  .design_wrapper {
+    background-color: $base-orange;
+    grid-area: dsn;
+  }
+  
+  .me_wrapper {
+    background-color: $base-black;
+    grid-area: me;
+  }
+  
+  .backend_wrapper {
+    background-color: $base-pink;
+    grid-area: bcd;
+  }
+  
+  .tools_wrapper {
+    background-color: $base-blue;
+    grid-area: tool;
+  }
+}

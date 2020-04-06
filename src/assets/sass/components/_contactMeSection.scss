@@ -1,0 +1,30 @@
+.contact-me_container {
+  margin: 2em 2em;
+
+  .social-list {
+    list-style-type: none;
+    height: 200px;
+
+    .social-list_item {
+      width: 50%;
+      float: left;
+      display: flex;
+      align-items: center;
+      font-weight: $thin-font-weight;
+      letter-spacing: 0.1em;
+
+      .social-icon {
+        width: 24px;
+      }
+
+      .social-description {
+        margin-left: 20px;
+      }
+
+    }
+
+    .social-list_item:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+}

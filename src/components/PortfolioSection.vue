@@ -1,40 +1,47 @@
 <template>
-  <div>
+  <div ref="portfolio" class="portfolio_container">
     <h2>PORTFOLIO</h2>
-    <section class="">
-      <nav>
-          <div class="">
-            <div class="container">
-              <ul id="" class="right hide-on-med-and-down">
-                <li>
-                  <p>All</p>
-                  </li>
-                <li>
-                  <p>Backend</p>
-                </li>
-                <li>
-                  <p>Frontend</p>
-                </li>
-                <li>
-                  <p>Web / Javascript</p>
-                </li>
-              </ul>
-              <div class="project_grid-container">
-                <div class="grid-column">
-                  <div class="cell">Proj 1</div>
-                  <div class="cell">Proj 2</div>
-                  <div class="cell">Proj 3</div>
-                  <div class="cell">Proj 4</div>
-                  <div class="cell">Proj 5</div>
-                  <div class="cell">Proj 6</div>
-                  <div class="cell">Proj 7</div>
-                  <div class="cell">Proj 8</div>
-                  <div class="cell">Proj 9</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
+    <section class="portfolio_wrapper">
+      <TableFilter />
+      <div class="project_grid-container">
+        <div class="card cell" v-scrollanimation>
+          <img src="../assets/images/Initiative-project.png" alt="Initiative Project">
+        </div>
+        <div class="card cell" v-scrollanimation>
+          <img src="../assets/images/Rent-N-Share.png" alt="Rent-N-Share">
+        </div>
+        <div class="card cell" v-scrollanimation>
+          <img src="../assets/images/sharebnb-legacy.png" alt="ShareBnB Legacy">
+        </div>
+        <div class="card cell" v-scrollanimation>
+          <img src="../assets/images/Rose-Edition.png" alt="Rose Edition">
+        </div>
+        <div class="card cell" v-scrollanimation>
+          <img src="../assets/images/shutterscope-preview.png" alt="Shutter Scope">
+        </div>
+        <div class="card cell" v-scrollanimation>
+          <img src="../assets/images/inspodiary.png" alt="Inspo Diariest">
+        </div>
+        <div class="card cell" v-scrollanimation>
+          <img src="../assets/images/labdesign.png" alt="Dr. Zhang Labt">
+        </div>
+        <div class="card cell" v-scrollanimation>
+          <img src="../assets/images/flightpath.png" alt="Flight Path">
+        </div>
+        <div class="card cell" v-scrollanimation>
+          <img src="../assets/images/gallery.png" alt="Gallery Rotation">
+        </div>
+      </div>
     </section>
   </div>
 </template>
+
+<script>
+import TableFilter from './TableFilter';
+
+export default {
+  components: {
+    TableFilter
+  }
+}
+</script>

@@ -14,7 +14,7 @@
     list-style-type: none;
     margin-right: 30px;
   
-    .nav-menu-item {
+    .nav-menu_item {
       font-family: 'Roboto', Helvetica, Arial, sans-serif;
       font-size: $nav-font-size;
       font-weight: $bold-font-weight;
@@ -22,15 +22,15 @@
       letter-spacing: 0.1em;
       cursor: pointer;
   
-      a {
+      span {
         text-decoration: none;
       }
   
-      a:visited {
+      span:visited {
         color: $base-blue;
       }
 
-      a:hover {
+      span:hover {
         text-decoration: underline;
       }
     }

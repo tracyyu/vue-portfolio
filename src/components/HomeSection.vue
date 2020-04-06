@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section ref="home">
     <div class="title-container">
       <h1>TRACY YU.</h1>
     </div>

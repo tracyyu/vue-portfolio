@@ -1,9 +1,9 @@
 <template>
-  <div class="about-me_container">
-    <section class="about-me-dsecription_container">
+  <div ref="about" class="about-me_container">
+    <section class="about-me-description_container">
       <div class="about-me_description">
-        <h3>Where do I begin...</h3>
-        <div class="description-body">
+        <h3 v-scrollanimation >Where do I begin...</h3>
+        <div class="description-body" v-scrollanimation>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget porttitor libero, vitae consequat tellus. 
             Pellentesque fringilla suscipit mi vel porttitor. Aliquam pretium congue nibh, eu imperdiet massa rhoncus vel.
@@ -14,10 +14,30 @@
           </p>
         </div>
       </div>
-      <div class="about-me_image-container">
-        <h2>ABOUT ME</h2>
+      <div class="about-me_image-container" >
+        <div class="top-header_wrapper">
+          <h2 
+            class="top-header"
+            v-scrollanimation
+          >
+            ABOUT
+          </h2>
+        </div>
         <div class="about-me_image">
-          Profile Image
+          <img 
+            class="profile-image" 
+            src="../assets/images/portrait-portfolio2.jpg" 
+            alt="profile photo"
+            v-scrollanimation
+          >
+        </div>
+        <div class="bottom-header_wrapper">
+          <h2 
+            class="bottom-header"
+            v-scrollanimation
+          >
+            ME
+          </h2>
         </div>
       </div>
     </section>
@@ -48,7 +68,7 @@
           </ul>
         </div>
         <div class="skills-infograph_image-container">
-          Skills Infographic Image
+          <SkillsInfoGraph />
         </div>
         <div class="backend skills_description-container">
           <ul>
@@ -79,3 +99,14 @@
     </section>
   </div>
 </template>
+
+<script>
+import SkillsInfoGraph from './SkillsInfoGraph';
+
+export default {
+  components: {
+    SkillsInfoGraph
+  }
+}
+</script>
+

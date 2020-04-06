@@ -1,0 +1,33 @@
+.filter-wrapper {
+  width: 100%;
+  margin-top: 15px;
+
+  #filter-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 2em;
+  
+    .filter-menu_item {
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      font-size: $nav-font-size;
+      font-weight: $bold-font-weight;
+      color: $base-blue;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+  
+      a {
+        text-decoration: none;
+      }
+  
+      a:visited {
+        color: $base-blue;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
   margin: 2em 2em;
 }
 
-.about-me-dsecription_container {
+.about-me-description_container {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -13,25 +13,110 @@
   .about-me_description {
     grid-area: desc;
 
+    .before-enter {
+      opacity: 0;
+      transform: translateX(-100px);
+      transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  
+    .enter {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+
+    h3 {
+      transition-delay: .1s;
+    }
+
     .description-body {
       margin-left: 1em;
+      transition-delay: .2s;
     }
   }
   
   .about-me_image-container {
     grid-area: img;
+
+    .before-enter {
+      opacity: 0;
+      transform: translateY(100px);
+      transition: all 1.5s ease-in-out;
+    }
+  
+    .enter {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    .top-header_wrapper {
+      .top-header {
+        position: absolute;
+        margin-left: -30px;
+        margin-top: -50px;
+        transition-delay: .2s;
+      }
+
+      .before-enter {
+        opacity: 0;
+        transform: translateY(-100px);
+        transition: all 1.5s ease-in-out;
+      }
+    
+      .enter {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    .bottom-header_wrapper {
+      .bottom-header{
+        position: absolute;
+        margin-left: 210px;
+        margin-top: -10px;
+        transition-delay: .2s;
+      }
+
+      .before-enter {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 1.5s ease-in-out;
+      }
+    
+      .enter {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    .about-me_image {
+      .profile-image {
+        width: 250px;
+      }
+
+      .before-enter {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 1.5s ease-in-out;
+      }
+    
+      .enter {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
   }
 }
 
 .skills-infograph-container {
-  width: 100%;
+  margin: 0 2em;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-template-areas: 
     "frd . info . bcd"
     "des . info . tol";
-  margin: 0 1em;
+  align-items: center;
+  justify-items: center;
 }
 
 .frontend {
@@ -50,7 +135,7 @@
   grid-area: tol;
 }
 
-.about-me_image {
+.skills-infograph_image-container {
   grid-area: info;
 }
 
@@ -60,6 +145,6 @@
   ul {
     li:not(:last-child) {
       margin-bottom: 5px;
-  }
+    }
   }
 }
