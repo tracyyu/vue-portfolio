@@ -1,5 +1,5 @@
 <template>
-  <div ref="contact" class="contact-me_container">
+  <div ref="contact" class="contact-me_container container">
     <h2>CONTACT ME</h2>
     <ul class="social-list">
       <li class="social-list_item">

@@ -1,5 +1,5 @@
 .about-me_container {
-  margin: 2em 2em;
+  margin: 4em 6em;
 }
 
 .about-me-description_container {
@@ -15,7 +15,7 @@
 
     .before-enter {
       opacity: 0;
-      transform: translateX(-100px);
+      transform: translateX(-40px);
       transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   
@@ -29,7 +29,7 @@
     }
 
     .description-body {
-      margin-left: 1em;
+      margin: 1em 0 0 1em;
       transition-delay: .2s;
     }
   }
@@ -52,13 +52,13 @@
       .top-header {
         position: absolute;
         margin-left: -30px;
-        margin-top: -50px;
+        margin-top: -55px;
         transition-delay: .2s;
       }
 
       .before-enter {
         opacity: 0;
-        transform: translateY(-100px);
+        transform: translateY(-30px);
         transition: all 1.5s ease-in-out;
       }
     
@@ -72,7 +72,7 @@
       .bottom-header{
         position: absolute;
         margin-left: 210px;
-        margin-top: -10px;
+        margin-top: 10px;
         transition-delay: .2s;
       }
 
@@ -95,7 +95,7 @@
 
       .before-enter {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(40px);
         transition: all 1.5s ease-in-out;
       }
     
@@ -107,8 +107,12 @@
   }
 }
 
+.skills_container {
+  margin: 5em 0 0 0;
+}
+
 .skills-infograph-container {
-  margin: 0 2em;
+  margin: 2em 2em 0 2em;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
@@ -116,7 +120,6 @@
     "frd . info . bcd"
     "des . info . tol";
   align-items: center;
-  justify-items: center;
 }
 
 .frontend {
@@ -125,6 +128,7 @@
 
 .design {
   grid-area: des;
+  margin-top: 20px;
 }
 
 .backend {
@@ -133,6 +137,7 @@
 
 .tools {
   grid-area: tol;
+  margin-top: 20px;
 }
 
 .skills-infograph_image-container {
@@ -140,11 +145,90 @@
 }
 
 .skills_description-container {
+  text-align: left;
   font-weight: 300;
   letter-spacing: 0.1em;
   ul {
+    list-style-type: disc;
     li:not(:last-child) {
       margin-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .about-me_container {
+    margin: 4em 3em;
+  }
+
+  .skills-infograph-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-template-areas: 
+      "info info"
+      "frd bcd"
+      "des tol";
+    grid-gap: 1em;
+    justify-content: center;
+  }
+
+  .skills_description-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .design {
+    margin-top: 0px;
+  }
+  
+  .tools {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 750px) { 
+  .about-me_container {
+    text-align: center;
+  }
+
+  .about-me-description_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+      "img"
+      "desc";
+  
+    .about-me_description {
+      margin-top: 2em;
+      text-align: center;
+    }
+    
+    .about-me_image-container {
+      display: flex;
+      justify-content: center;
+
+      .bottom-header_wrapper {
+        .bottom-header{
+          position: relative;
+          margin-left: -40px;
+          margin-top: -55px;
+          transition-delay: .2s;
+        }
+
+        .before-enter {
+          opacity: 0;
+          transform: translateY(100px);
+          transition: all 1.5s ease-in-out;
+        }
+      
+        .enter {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
     }
   }
 }

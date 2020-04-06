@@ -13,9 +13,7 @@
       <span>BACKEND</span>
     </div>
     <div class="circle tools_wrapper">
-      <span>TOOLS/</span>
-      <br/>
-      <span>TESTING</span>
+      <span>TOOLS</span>
     </div>
   </div>
 </template>

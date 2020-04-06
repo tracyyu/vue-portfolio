@@ -1,5 +1,5 @@
 <template>
-  <div ref="design" class="design-process_container">
+  <div ref="design" class="design-process_container container">
     <h2>DESIGN PROCESS</h2>
     <div class="design_process_wrapper">
       <section 
@@ -7,7 +7,7 @@
         v-scrollanimation
       >
         <div class="design-process_description">
-          <h3>Where do I begin...</h3>
+          <h3>Project 10 K</h3>
           <div class="description-body">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget porttitor libero, vitae consequat tellus. 
@@ -28,7 +28,7 @@
         v-scrollanimation
       >
         <div class="design-process_description">
-          <h3>Where do I begin...</h3>
+          <h3>Device Management Inventory Dashboard</h3>
           <div class="description-body">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget porttitor libero, vitae consequat tellus. 

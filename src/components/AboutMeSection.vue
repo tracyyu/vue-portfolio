@@ -1,5 +1,5 @@
 <template>
-  <div ref="about" class="about-me_container">
+  <div ref="about" class="about-me_container container">
     <section class="about-me-description_container">
       <div class="about-me_description">
         <h3 v-scrollanimation >Where do I begin...</h3>
@@ -92,7 +92,6 @@
             <li>Git</li>
             <li>Webpack</li>
             <li>Heroku</li>
-            <li>Agile Methodology</li>
           </ul>
         </div>
       </div>

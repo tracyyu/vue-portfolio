@@ -8,7 +8,6 @@
     "dsn . me . tool";
   align-items: center;
   justify-items: center;
-  margin: 0 1em;
   grid-row-gap: 1em;
   
   .circle {
@@ -30,6 +29,21 @@
     width: 200px;
     height: 200px;
     transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  @media (max-width: 1200px) {
+    .circle {
+      width: 125px;
+      height: 125px;
+      font-size: 12;
+      font-weight: 400;
+    }
+
+    .circle:hover {
+      width: 150px;
+      height: 150px;
+      transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
   }
   
   .frontend_wrapper {
@@ -55,5 +69,18 @@
   .tools_wrapper {
     background-color: $base-blue;
     grid-area: tool;
+  }
+}
+
+@media (max-width: 950px) {
+  .skills-infograph_wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "frd me bcd"
+      "dsn me tool";
+    grid-row-gap: 1em;
   }
 }

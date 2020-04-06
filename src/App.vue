@@ -26,11 +26,11 @@ export default {
       if (refName === 'home') {
         top = 0;
       } else if (refName === 'about') {
-        top = 200;
+        top = 750;
       } else if (refName === 'portfolio') {
-        top = 1250;
+        top = 1750;
       } else if (refName === 'design') {
-        top = 2250;
+        top = 2625;
       } else if (refName === 'contact') {
         top = 3500;
       }
