@@ -45,7 +45,7 @@
       <h3>Skills</h3>
       <div class="skills-infograph-container">
         <div class="frontend skills_description-container">
-          <ul>
+          <ul :class="( selectedSkill === 'frontend' || selectedSkill === 'me' ) ? 'emphasize' : ''">
             <li>Javascript</li>
             <li>React</li>
             <li>NextJS</li>
@@ -59,7 +59,7 @@
           </ul>
         </div>
         <div class="design skills_description-container">
-          <ul>
+          <ul :class="( selectedSkill === 'design' || selectedSkill === 'me' ) ? 'emphasize' : ''">
             <li>Sketch</li>
             <li>Lightroom</li>
             <li>InVision</li>
@@ -68,10 +68,10 @@
           </ul>
         </div>
         <div class="skills-infograph_image-container">
-          <SkillsInfoGraph />
+          <SkillsInfoGraph @selectSkill="selectSkill" />
         </div>
         <div class="backend skills_description-container">
-          <ul>
+          <ul :class="( selectedSkill === 'backend' || selectedSkill === 'me' ) ? 'emphasize' : ''">
             <li>Node.js</li>
             <li>Express</li>
             <li>MySQL</li>
@@ -84,7 +84,7 @@
           </ul>
         </div>
         <div class="tools skills_description-container">
-          <ul>
+          <ul :class="( selectedSkill === 'tools' || selectedSkill === 'me' ) ? 'emphasize' : ''">
             <li>Jest</li>
             <li>Mocha</li>
             <li>Enzyme</li>
@@ -103,8 +103,18 @@
 import SkillsInfoGraph from './SkillsInfoGraph';
 
 export default {
+  data() {
+    return {
+      selectedSkill: null
+    }
+  },
   components: {
     SkillsInfoGraph
+  },
+  methods: {
+    selectSkill(value) {
+      this.selectedSkill = value;
+    }
   }
 }
 </script>

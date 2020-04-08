@@ -10,12 +10,11 @@
           <h3>Project 10 K</h3>
           <div class="description-body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget porttitor libero, vitae consequat tellus. 
-              Pellentesque fringilla suscipit mi vel porttitor. Aliquam pretium congue nibh, eu imperdiet massa rhoncus vel.
+              High-level overview of all departments for management and board members get up-to-date information about important statistics and data per quarter.
             </p>
             <p>
-              Cras et pretium ante. Etiam elementum, sapien in maximus scelerisque, ligula felis malesuada magna, nec maximus lectus ipsum at tellus. 
-              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  
+              Incorporates a world map to show location of all devices, sales charts for all quarterlu revenue, QA checklist while during QA phase, Jira Integration 
+              for all projects spread acrosee Dev Team, important calendars for Marketing/ Press and internal events for entire company.
             </p>
           </div>
         </div>
@@ -31,12 +30,12 @@
           <h3>Device Management Inventory Dashboard</h3>
           <div class="description-body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget porttitor libero, vitae consequat tellus. 
-              Pellentesque fringilla suscipit mi vel porttitor. Aliquam pretium congue nibh, eu imperdiet massa rhoncus vel.
+              Device Management Dashboard for internal usage among Operations and Dev Team to manage and track all devices shipped and used by individual clients and instituations
+              for all platforms. 
             </p>
             <p>
-              Cras et pretium ante. Etiam elementum, sapien in maximus scelerisque, ligula felis malesuada magna, nec maximus lectus ipsum at tellus. 
-              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  
+              Displays instrumentation data for individual devices connected to specific organizations. Allows user to view specific content platform for each device while having access
+              to overview data about organization spanning over weeks, months, and one year period.  
             </p>
           </div>
         </div>

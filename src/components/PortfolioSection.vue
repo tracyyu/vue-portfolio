@@ -5,7 +5,7 @@
       <TableFilter @selectFilter="selectFilter" :category="selectedCategory" />
       <div class="project_grid-container">
         <!-- <transition name="fade"> -->
-          <div class="card portfolio-item" v-for="(project, index) in filteredProjects" :key="project.title" @click="showModal(index)" v-scrollanimation>
+          <div class="card portfolio-item" v-for="(project) in filteredProjects" :key="project.title" @click="showModal(project.title)" v-scrollanimation>
             <a class="portfolio-link" data-toggle="modal">
               <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -44,8 +44,8 @@ export default {
     }
   },
   methods: {
-    showModal(id) {
-      this.selectedProject = this.projects[id];
+    showModal(title) {
+      this.selectedProject = this.projects.filter( project => project.title === title)[0];
       this.$root.$emit('bv::show::modal', 'modal-1', '#btnShow');
     },
     hideModal() {
