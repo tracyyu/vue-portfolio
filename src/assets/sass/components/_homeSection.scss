@@ -1,18 +1,20 @@
+.home_section {
+  margin: 40px 2em 0 2em;
+}
+
 .title-container {
   width: 400px;
 }
 
 .homepage-image_container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -30px;
+  max-width: 1600px;
+  height: 600px;
+  position: relative;
+  margin: auto;
   padding-bottom: 60px;
 
   .text-lower-right-wrapper, .text-upper-right-wrapper{
-    position: absolute;
+    position: relative;
     span {
       font-family: $main-font;
       font-weight: $bold-font-weight;
@@ -21,19 +23,21 @@
   }
 
   .text-lower-right-wrapper {
-    bottom: 30px;
-    left: 263px;
+    width: 160px;
+    height: 20px;
+    margin-left: 100px;
   }
 
   .text-upper-right-wrapper {
-    top: 245px;
-    right: 205px;
+    width: 180px;
+    height: 20px;
+    margin-left: 125px;
     -ms-transform: rotate(90deg); /* IE 9 */
     transform: rotate(90deg); /* Standard syntax */
   }
 
   .text-lower-left-wrapper, .text-upper-left-wrapper {
-    position: absolute;
+    position: relative;
     span {
       font-family: $main-font;
       font-weight: $thin-font-weight;
@@ -42,20 +46,29 @@
   }
 
   .text-lower-left-wrapper {
-    left: 250px;
-    bottom: 165px;
+    width: 120px;
+    height: 20px;
+    margin-top: -180px;
+    margin-left: 60px;
     -ms-transform: rotate(-90deg); /* IE 9 */
     transform: rotate(-90deg); /* Standard syntax */
   }
 
   .text-upper-left-wrapper {
-    top: 125px;
-    right: 325px;
+    width: 95px;
+    height: 20px;
+    float: right;
+    margin-left: -120px;
   }
   
+  .image_wrapper {
+    max-width: 800px;
+    margin: auto;
 
-  img {
-    max-width: 900px;
-    max-height: 900px;
+    img {
+      width: 100%;
+      max-width: 800px;
+      max-height: 800px;
+    }
   }
 }

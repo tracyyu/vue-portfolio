@@ -1,0 +1,23 @@
+.modal-header {
+  margin-bottom: 15px;
+  font-size: $modal-header-font-size;
+  color: $base-blue;
+  letter-spacing: 0.2em;
+}
+
+.project-summary {
+  font-size: $sub-sub-header-font-size;
+  font-weight: 700;
+}
+
+.project-preview-img {
+  margin-bottom: 1.5rem;
+}
+
+.project-detailed-summary, .project-link {
+  font-size: $nav-font-size;
+}
+
+.project-link, .close-btn {
+  letter-spacing: 0.15em;
+}
