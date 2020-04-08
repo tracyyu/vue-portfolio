@@ -1,5 +1,5 @@
 <template>
-  <div ref="about" class="about-me_container container">
+  <div id="about-me" class="about-me_container container">
     <section class="about-me-description_container">
       <div class="about-me_description">
         <h3 v-scrollanimation >Where do I begin...</h3>

@@ -2,19 +2,19 @@
   <div ref="nav-wrapper" class="nav-wrapper">
     <ul id="nav-menu" class="right hide-on-med-and-down">
       <li class="nav-menu_item">
-        <span v-on:click="goto('home')">Home</span>
-        </li>
-      <li class="nav-menu_item">
-        <span v-on:click="goto('about')">About</span>
+        <a href="#" v-scroll-to="'#home'">Home</a>
       </li>
       <li class="nav-menu_item">
-        <span v-on:click="goto('portfolio')">Portfolio</span>
+        <a href="#" v-scroll-to="'#about-me'">About</a>
       </li>
       <li class="nav-menu_item">
-        <span v-on:click="goto('design')">Design</span>
+        <a href="#" v-scroll-to="'#portfolio'">Portfolio</a>
       </li>
       <li class="nav-menu_item">
-        <span v-on:click="goto('contact')">Contact</span>
+        <a href="#" v-scroll-to="'#design'">Design</a>
+      </li>
+      <li class="nav-menu_item">
+        <a href="#" v-scroll-to="'#contact'">Contact</a>
       </li>
     </ul>
     <template>
@@ -31,11 +31,11 @@
 
           <b-collapse id="navbar-toggle-collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item href="#">Home</b-nav-item>
-              <b-nav-item href="#">About Me</b-nav-item>
-              <b-nav-item href="#">Portfolio</b-nav-item>
-              <b-nav-item href="#">Design Process</b-nav-item>
-              <b-nav-item href="#">Contact</b-nav-item>
+              <b-nav-item href="#" v-scroll-to="'#home'">Home</b-nav-item>
+              <b-nav-item href="#" v-scroll-to="'#about-me'">About Me</b-nav-item>
+              <b-nav-item href="#" v-scroll-to="'#portfolio'">Portfolio</b-nav-item>
+              <b-nav-item href="#" v-scroll-to="'#design'">Design Process</b-nav-item>
+              <b-nav-item href="#" v-scroll-to="'#contact'">Contact</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>

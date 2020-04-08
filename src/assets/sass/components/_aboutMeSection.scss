@@ -1,5 +1,5 @@
 .about-me_container {
-  margin: 4em 6em;
+  padding: 140px 6em 0em 6em;
 }
 
 .about-me-description_container {
@@ -108,7 +108,7 @@
 }
 
 .skills_container {
-  margin: 5em 0 0 0;
+  padding: 5em 0 0 0;
 }
 
 .skills-infograph-container {
@@ -161,7 +161,7 @@
 
 @media (max-width: 950px) {
   .about-me_container {
-    margin: 4em 3em;
+    padding: 150px 3em 0 3em;
   }
 
   .skills-infograph-container {
@@ -238,6 +238,6 @@
 
 @media (max-width: 550px) {
   .about-me_container {
-    margin: 4em 2em;
+    padding: 130px 2em;
   }
 }

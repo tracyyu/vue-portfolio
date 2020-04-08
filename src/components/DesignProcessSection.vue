@@ -1,5 +1,5 @@
 <template>
-  <div ref="design" class="design-process_container container">
+  <div id="design" class="design-process_container container">
     <h2>DESIGN PROCESS</h2>
     <div class="design_process_wrapper">
       <section 

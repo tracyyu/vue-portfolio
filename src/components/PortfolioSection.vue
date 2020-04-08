@@ -1,5 +1,5 @@
 <template>
-  <div ref="portfolio" class="portfolio_container container">
+  <div id="portfolio" class="portfolio_container container">
     <h2>PORTFOLIO</h2>
     <section class="portfolio_wrapper">
       <TableFilter @selectFilter="selectFilter" :category="selectedCategory" />

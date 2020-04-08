@@ -1,5 +1,5 @@
 .design-process_container {
-  margin: 4em 6em;
+  padding: 100px 6em 0 6em;
 
   .design_process_wrapper {
     width: 100%;
@@ -91,7 +91,7 @@
 
 @media (max-width: 950px) {
   .design-process_container {
-    margin: 4em 3em;
+    padding: 100px 3em 0 3em;
   }
 }
 
@@ -128,7 +128,7 @@
 
 @media (max-width: 515px) { 
   .design-process_container {
-    margin: 4em 0em;
+    padding: 100px 0em 0em 0em;
   }
 
   .p10k-image-1 {

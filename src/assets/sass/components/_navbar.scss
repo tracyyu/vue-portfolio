@@ -25,15 +25,16 @@
       letter-spacing: 0.1em;
       cursor: pointer;
   
-      span {
+      a {
         text-decoration: none;
+        color: $base-blue;
       }
   
-      span:visited {
+      a:visited {
         color: $base-blue;
       }
 
-      span:hover {
+      a:hover {
         text-decoration: underline;
       }
     }
