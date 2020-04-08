@@ -82,5 +82,71 @@
       "frd me bcd"
       "dsn me tool";
     grid-row-gap: 1em;
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      font-size: 12;
+      font-weight: 400;
+    }
+
+    .circle:hover {
+      width: 200px;
+      height: 200px;
+      transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
   }
 }
+
+@media (max-width: 770px) {
+  .skills-infograph_wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "frd me bcd"
+      "dsn me tool";
+    grid-row-gap: 1em;
+
+    .circle {
+      width: 125px;
+      height: 125px;
+      font-size: 12;
+      font-weight: 400;
+    }
+
+    .circle:hover {
+      width: 150px;
+      height: 150px;
+      transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+  }
+}
+
+@media (max-width: 485px) {
+  .skills-infograph_wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "frd me bcd"
+      "dsn me tool";
+    grid-row-gap: 1em;
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      font-size: 12;
+      font-weight: 400;
+    }
+
+    .circle:hover {
+      width: 125px;
+      height: 125px;
+      transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+  }
+}
+

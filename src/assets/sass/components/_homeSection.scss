@@ -1,5 +1,8 @@
 .home_section {
   margin: 40px 2em 0 2em;
+  max-width: 1600px;
+  max-height: 900px;
+  position: relative;
 }
 
 .title-container {
@@ -10,8 +13,6 @@
   max-width: 1600px;
   height: 600px;
   position: relative;
-  margin: auto;
-  padding-bottom: 60px;
 
   .text-lower-right-wrapper, .text-upper-right-wrapper{
     position: relative;
@@ -63,12 +64,30 @@
   
   .image_wrapper {
     max-width: 800px;
-    margin: auto;
+    height: auto;
 
     img {
       width: 100%;
       max-width: 800px;
       max-height: 800px;
     }
+  }
+}
+
+@media (max-width: 990px) { 
+  .home_section {
+    height: 650px;
+  }
+}
+
+@media (max-width: 770px) { 
+  .home_section {
+    height: 550px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title-container {
+    width: 100%;
   }
 }

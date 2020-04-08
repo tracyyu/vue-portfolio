@@ -112,7 +112,6 @@
 }
 
 .skills-infograph-container {
-  margin: 2em 2em 0 2em;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
@@ -234,5 +233,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 550px) {
+  .about-me_container {
+    margin: 4em 2em;
   }
 }

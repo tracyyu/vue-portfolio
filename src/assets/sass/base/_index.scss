@@ -6,7 +6,6 @@ html {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 30px 30px;
 
   h1 {
     font-family: 'Playfair Display', serif;
@@ -40,5 +39,11 @@ html {
 
   .container {
     margin-top: 6em 3em 0 3em;
+  }
+}
+
+@media (max-width: 450px) {
+  #app {
+    padding: 0;
   }
 }
