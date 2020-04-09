@@ -22,13 +22,24 @@
     }
   }
 
+  .before-enter:nth-child(even){
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 1.5s ease-in-out;
+  }
+
+  .enter:nth-child(even) {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
   .text-lower-right-wrapper {
     bottom: -15vh;
   }
 
   .text-upper-right-wrapper {
     top: 12.5vw;
-    right: -10vw;
+    right: -8vw;
     -ms-transform: rotate(90deg); /* IE 9 */
     transform: rotate(90deg); /* Standard syntax */
   }
@@ -51,7 +62,7 @@
   }
 
   .text-upper-left-wrapper {
-    right: 2vw;
+    right: 5vw;
     top: -2vw;
   }
   
@@ -72,7 +83,7 @@
 
     .text-upper-right-wrapper {
       top: 12.5vw;
-      right: -10vw;
+      right: -8vw;
       -ms-transform: rotate(90deg); /* IE 9 */
       transform: rotate(90deg); /* Standard syntax */
     }
@@ -85,7 +96,7 @@
     }
 
     .text-upper-left-wrapper {
-      right: 2vw;
+      right: 5vw;
       top: -2vw;
     }
   }
@@ -149,7 +160,7 @@
     }
 
     .text-upper-left-wrapper {
-      right: 4vw;
+      right: 5vw;
       top: -2vw;
     }
   }
