@@ -5,12 +5,15 @@
         <h3 v-scrollanimation >Where do I begin...</h3>
         <div class="description-body" v-scrollanimation>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget porttitor libero, vitae consequat tellus. 
-            Pellentesque fringilla suscipit mi vel porttitor. Aliquam pretium congue nibh, eu imperdiet massa rhoncus vel.
+            I’ve cultivated a passion for problem solving and for building large scale applications while working in teams to help client’s ideas come to fruition. 
+            I thrive well in the fast-paced environment of the tech industry where I’ve built businesses and products ranging from ecommerce to aerospace, while utilizing modern frameworks and languages. 
+            Having designed applications from the ground up using a combination of React, Angular with MongoDB, or Python with Django, I’ve gained an integral ability to see the entire pipeline as a whole and not just separate components. 
+            Thus, having an affinity for design and data optimization, I am consistently leveraging my skills in system design, system architecture, and user experience to develop real-world applications that help the world stay connected.
           </p>
           <p>
-            Cras et pretium ante. Etiam elementum, sapien in maximus scelerisque, ligula felis malesuada magna, nec maximus lectus ipsum at tellus. 
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  
+            Recently, I have been putting more focus on understanding UX and UI concepts and theories to create user-friendly and engaging prototypes best suited for different needs.
+            My research has span over different industries from game design, e-commerce product pages, and internal organizational dashboard for device companies, and given me a broader perspective on tackling design approaches for clients.
+            Nothing is more satisfying than bringing 2D designs to life as web applications for users to engage and interact with.
           </p>
         </div>
       </div>
