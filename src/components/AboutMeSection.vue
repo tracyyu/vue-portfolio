@@ -5,10 +5,9 @@
         <h3 v-scrollanimation >Where do I begin...</h3>
         <div class="description-body" v-scrollanimation>
           <p>
-            I’ve cultivated a passion for problem solving and for building large scale applications while working in teams to help client’s ideas come to fruition. 
-            I thrive well in the fast-paced environment of the tech industry where I’ve built businesses and products ranging from ecommerce to aerospace, while utilizing modern frameworks and languages. 
-            Having designed applications from the ground up using a combination of React, Angular with MongoDB, or Python with Django, I’ve gained an integral ability to see the entire pipeline as a whole and not just separate components. 
-            Thus, having an affinity for design and data optimization, I am consistently leveraging my skills in system design, system architecture, and user experience to develop real-world applications that help the world stay connected.
+            I’ve cultivated a passion for problem solving and for building large scale applications to help client’s ideas come to fruition. 
+            Having built businesses and products ranging from ecommerce to aerospace, I’ve gained an integral ability to see the entire pipeline as a whole and not just separate components. 
+            I love leveraging my skills in system design, system architecture, and user experience to develop real-world applications that help the world stay connected.
           </p>
           <p>
             Recently, I have been putting more focus on understanding UX and UI concepts and theories to create user-friendly and engaging prototypes best suited for different needs.
